@@ -19,8 +19,9 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Pull Docker Image
         run: docker pull theecyberchef/dockerhub:myfirstimagepush
-# Trivy
-        name: Pull Docker Image
+       
+        # Trivy
+        - name: Pull Docker Image
         run: docker pull theecyberchef/dockerhub:myfirstimagepush
       - name: Install Trivy
         run: |
@@ -43,3 +44,6 @@ jobs:
         hide-progress: false
         format: 'table'
         ignore-unfixed: true
+
+
+       
