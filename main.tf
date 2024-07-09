@@ -16,7 +16,7 @@ terraform {
 }
 resource "aws_instance" "test5" {
   ami           = "ami-09e23f0bba0095e44" # Replace with the desired Amazon Linux 2 AMI for eu-west-2 (bitnami image)
-  instance_type = "t3a.small"  # Change to the desired instance type
+  instance_type = "t2.micro"  # Change to the desired instance type
   tags = {
     Name = "devsecops-instance"
   }
